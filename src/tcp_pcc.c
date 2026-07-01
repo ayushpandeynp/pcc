@@ -618,7 +618,7 @@ static void pcc_cwnd_event(struct sock *sk, enum tcp_ca_event event)
 
 static struct tcp_congestion_ops tcp_pcc_cong_ops __read_mostly = {
         .flags = TCP_CONG_NON_RESTRICTED,
-        .name = "pcc",
+        .name = "pcc_allegro",
         .owner = THIS_MODULE,
         .init = pcc_init,
         .release        = pcc_release,
@@ -653,6 +653,6 @@ module_exit(pcc_unregister);
 
 MODULE_AUTHOR("Nogah Frankel <nogah.frankel@gmail.com>");
 MODULE_LICENSE("Dual BSD/GPL");
-MODULE_DESCRIPTION("TCP PCC (Performance-oriented Congestion Control)");
+MODULE_DESCRIPTION("TCP PCC Allegro (Performance-oriented Congestion Control)");
 
 
