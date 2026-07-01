@@ -824,7 +824,7 @@ static void pcc_cwnd_event(struct sock *sk, enum tcp_ca_event event)
 
 static struct tcp_congestion_ops tcp_pcc_cong_ops __read_mostly = {
 	.flags = TCP_CONG_NON_RESTRICTED,
-	.name = "pcc",
+	.name = "pcc_vivace",
 	.owner = THIS_MODULE,
 	.init = pcc_init,
 	.release		= pcc_release,
@@ -861,6 +861,6 @@ MODULE_AUTHOR("Tomer Gilad <tomer.gilad1@mail.huji.ac.il>");
 MODULE_AUTHOR("Nathan Jay <njay2@illinois.edu>");
 MODULE_AUTHOR("Nogah Frankel <nogah.frankel@gmail.com>");
 MODULE_LICENSE("Dual BSD/GPL");
-MODULE_DESCRIPTION("TCP PCC (Performance-oriented Congestion Control)");
+MODULE_DESCRIPTION("TCP PCC Vivace (Performance-oriented Congestion Control)");
 
 
