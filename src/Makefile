@@ -1,8 +1,8 @@
 ifneq ($(KERNELRELEASE),)
 
 # kbuild part of makefile
-obj-m  := tcp_pcc.o
-#tcp_pcc-y := tcp_pcc.o
+obj-m  := tcp_pcc_allegro.o
+tcp_pcc_allegro-y := tcp_pcc.o
 
 else
 # normal makefile
